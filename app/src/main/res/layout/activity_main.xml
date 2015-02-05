@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".MainActivity">
+
+    <appsatwork_internal.awesometestgame.drawing.GameView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/the_canvas"/>
+    <Button
+        android:id="@+id/fire_button"
+        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_margin="20dp"
+        android:text="Fire!"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/the_canvas"
+        android:onClick="fire_button_click"/>
+    <Button
+        android:id="@+id/exit_btton"
+        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_margin="20dp"
+        android:text="Exit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@id/the_canvas"
+        android:onClick="exit_button_click"/>
+</RelativeLayout>
